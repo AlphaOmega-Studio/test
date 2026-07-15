@@ -2,13 +2,13 @@ const projects = [
     {
         title: "Space Adventure",
         shortDesc: "Космическая сага о поиске новой родины.",
-        image: "",
+        image: "projects/game2.jpg",
         html: "projects/game1.html"
     },
     {
         title: "Mystic Quest",
         shortDesc: "Фэнтезийное приключение в мире магии.",
-        image: "",
+        image: "projects/game2.jpg",
         html: "projects/game2.html"
     }
 ];
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const title = p.title || 'Без названия';
         const desc = p.shortDesc || 'Описание отсутствует';
-        const img = p.image || '';
+        const img = p.image || 'data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
         const link = p.html || '#';
 
         card.innerHTML = `
             <a href="${link}">
                 <img src="${img}" alt="${title}" loading="lazy"
-                     onerror="this.src=''">
+                     onerror="this.src='data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'">
                 <h3>${escapeHtml(title)}</h3>
                 <p>${escapeHtml(desc)}</p>
             </a>
