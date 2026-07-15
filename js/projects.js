@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const title = p.title || 'Без названия';
         const desc = p.shortDesc || 'Описание отсутствует';
-        const img = p.image || 'https://picsum.photos/seed/default/400/250';
+        const img = p.image || '';
         const link = p.html || '#';
 
         card.innerHTML = `
             <a href="${link}">
                 <img src="${img}" alt="${title}" loading="lazy"
-                     onerror="this.src='https://picsum.photos/seed/error/400/250'">
+                     onerror="this.src=''">
                 <h3>${escapeHtml(title)}</h3>
                 <p>${escapeHtml(desc)}</p>
             </a>
