@@ -1,13 +1,13 @@
 const projects = [
     {
-        title: "Space Adventure",
-        shortDesc: "Космическая сага о поиске новой родины.",
-        image: "projects/game2.jpg",
+        title: "Project ΑΩ",
+        shortDesc: "тут будет описание",
+        image: "projects/game1.jpg",
         html: "projects/game1.html"
     },
     {
-        title: "Mystic Quest",
-        shortDesc: "Фэнтезийное приключение в мире магии.",
+        title: "Project ΑΩ: Λ",
+        shortDesc: "тут тоже будет",
         image: "projects/game2.jpg",
         html: "projects/game2.html"
     }
@@ -15,31 +15,22 @@ const projects = [
 
 document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementById('projects-grid');
-    if (!grid) {
-        console.error('Контейнер #projects-grid не найден');
-        return;
-    }
 
     grid.innerHTML = '';
-
-    if (projects.length === 0) {
-        grid.innerHTML = `<p style="grid-column:1/-1; text-align:center; padding:40px; color:#aaa;">Проекты в разработке...</p>`;
-        return;
-    }
 
     projects.forEach((p, index) => {
         const card = document.createElement('div');
         card.className = 'project-card';
-        card.style.animationDelay = (index * 0.1) + 's';
+        card.style.animationDelay = (index * 0.5) + 's';
 
-        const title = p.title || 'Без названия';
-        const desc = p.shortDesc || 'Описание отсутствует';
-        const img = p.image || '';
-        const link = p.html || '#';
+        const title = p.title;
+        const desc = p.shortDesc;
+        const img = p.image;
+        const link = p.html;
 
         card.innerHTML = `
             <a href="${link}">
-                <img src="${img}" alt="${title}" onerror="this.src=''">
+                <img src="${img}" alt="${title}">
                 <h3>${escapeHtml(title)}</h3>
                 <p>${escapeHtml(desc)}</p>
             </a>
