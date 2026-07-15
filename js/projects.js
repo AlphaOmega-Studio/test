@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         card.innerHTML = `
             <a href="${link}">
-                <img src="${img}" alt="${title}" loading="lazy"
-                     onerror="this.src=''">
+                <img src="${img}" alt="${title}" onerror="this.src=''">
                 <h3>${escapeHtml(title)}</h3>
                 <p>${escapeHtml(desc)}</p>
             </a>
