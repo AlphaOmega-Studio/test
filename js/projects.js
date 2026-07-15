@@ -2,13 +2,13 @@ const projects = [
     {
         title: "Space Adventure",
         shortDesc: "Космическая сага о поиске новой родины.",
-        image: "https://picsum.photos/seed/space/400/250",
+        image: "",
         html: "projects/game1.html"
     },
     {
         title: "Mystic Quest",
         shortDesc: "Фэнтезийное приключение в мире магии.",
-        image: "https://picsum.photos/seed/mystic/400/250",
+        image: "",
         html: "projects/game2.html"
     }
 ];
