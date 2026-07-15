@@ -27,12 +27,12 @@ a {
 }
 
 a:hover {
-    color: #e94560;
+    color: #3278dc;
 }
 
 .btn {
     display: inline-block;
-    background: #e94560;
+    background: #3278dc;
     color: #fff;
     padding: 12px 30px;
     border-radius: 30px;
@@ -67,12 +67,12 @@ header {
 .logo a {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #e94560;
+    color: #3278dc;
     letter-spacing: 2px;
 }
 
 .logo a:hover {
-    color: #e94560;
+    color: #3278dc;
 }
 
 .menu-toggle {
@@ -100,8 +100,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    border-bottom-color: #e94560;
-    color: #e94560;
+    border-bottom-color: #3278dc;
+    color: #3278dc;
 }
 
 .contacts {
@@ -116,7 +116,7 @@ nav ul li a.active {
 }
 
 .contacts a:hover {
-    color: #e94560;
+    color: #3278dc;
 }
 
 .hero {
@@ -146,7 +146,7 @@ nav ul li a.active {
 .about h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
-    color: #e94560;
+    color: #3278dc;
 }
 
 .about p {
@@ -250,7 +250,7 @@ nav ul li a.active {
 
 .game-description h2 {
     font-size: 2rem;
-    color: #e94560;
+    color: #3278dc;
     margin: 30px 0 15px;
 }
 
@@ -273,7 +273,7 @@ nav ul li a.active {
 
 .game-screenshots h2 {
     font-size: 2rem;
-    color: #e94560;
+    color: #3278dc;
     margin: 40px 0 20px;
 }
 
