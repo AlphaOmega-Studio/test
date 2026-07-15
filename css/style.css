@@ -1,4 +1,3 @@
-/* ===== RESET & БАЗА ===== */
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +48,6 @@ a:hover {
     color: #fff;
 }
 
-/* ===== ШАПКА ===== */
 header {
     background: #1a1a2e;
     padding: 15px 0;
@@ -121,7 +119,6 @@ nav ul li a.active {
     color: #e94560;
 }
 
-/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
 .hero {
     background: linear-gradient(135deg, #1a1a2e 0%, #2a2a4a 100%);
     padding: 100px 0;
@@ -157,7 +154,6 @@ nav ul li a.active {
     font-size: 1.1rem;
 }
 
-/* ===== СТРАНИЦА ПРОЕКТОВ ===== */
 .projects-page {
     padding: 40px 0;
 }
@@ -184,7 +180,7 @@ nav ul li a.active {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 15px 30px rgba(96, 69, 233, 0.3);
 }
 
 .project-card a {
@@ -211,7 +207,6 @@ nav ul li a.active {
     font-size: 0.95rem;
 }
 
-/* ===== СТРАНИЦА ДОКУМЕНТАЦИИ ===== */
 .docs-page {
     padding: 60px 0;
     text-align: center;
@@ -300,7 +295,6 @@ nav ul li a.active {
     transform: scale(1.05);
 }
 
-/* ===== ПОДВАЛ ===== */
 footer {
     background: #111122;
     padding: 25px 0;
@@ -314,10 +308,9 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 992px) {
     .contacts {
-        display: none; /* скрываем контакты на планшетах и телефонах */
+        display: none;
     }
 }
 
