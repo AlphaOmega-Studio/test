@@ -1,0 +1,396 @@
+/* ===== RESET & БАЗА ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0f0f1a;
+    color: #eaeaea;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e94560;
+}
+
+.btn {
+    display: inline-block;
+    background: #e94560;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #c73652;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* ===== ШАПКА ===== */
+header {
+    background: #1a1a2e;
+    padding: 15px 0;
+    border-bottom: 2px solid #2a2a4a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e94560;
+    letter-spacing: 2px;
+}
+
+.logo a:hover {
+    color: #e94560;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #eaeaea;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border-bottom-color: #e94560;
+    color: #e94560;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.95rem;
+}
+
+.contacts a {
+    color: #aaa;
+}
+
+.contacts a:hover {
+    color: #e94560;
+}
+
+/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
+.hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2a2a4a 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #ccc;
+}
+
+.about {
+    padding: 60px 0;
+    background: #141425;
+}
+
+.about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #e94560;
+}
+
+.about p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* ===== СТРАНИЦА ПРОЕКТОВ ===== */
+.projects-page {
+    padding: 40px 0;
+}
+
+.projects-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #1e1e32;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(233, 69, 96, 0.3);
+}
+
+.project-card a {
+    display: block;
+    color: inherit;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    padding: 15px 15px 5px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.project-card p {
+    padding: 0 15px 20px;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+/* ===== СТРАНИЦА ДОКУМЕНТАЦИИ ===== */
+.docs-page {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.docs-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.docs-page p {
+    font-size: 1.2rem;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== СТРАНИЦА ИГРЫ ===== */
+.game-page {
+    padding: 40px 0;
+}
+
+.game-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.game-banner {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.game-banner img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.game-description h2 {
+    font-size: 2rem;
+    color: #e94560;
+    margin: 30px 0 15px;
+}
+
+.game-description p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #d0d0d0;
+}
+
+.game-description ul {
+    list-style: square;
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.game-description ul li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.game-screenshots h2 {
+    font-size: 2rem;
+    color: #e94560;
+    margin: 40px 0 20px;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.screenshot-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.screenshot-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== ПОДВАЛ ===== */
+footer {
+    background: #111122;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid #2a2a4a;
+}
+
+footer p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 992px) {
+    .contacts {
+        display: none; /* скрываем контакты на планшетах и телефонах */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        margin-top: 15px;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .game-header h1 {
+        font-size: 2rem;
+    }
+
+    .screenshot-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .game-header h1 {
+        font-size: 1.6rem;
+    }
+}
